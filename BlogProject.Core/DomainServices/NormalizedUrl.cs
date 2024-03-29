@@ -10,7 +10,7 @@ namespace BlogProject.Core.DomainServices
     {
         public static string TurkishToEnglish(string name)
         {
-            string turkishCharacters = "ığüşiöç ";
+            string turkishCharacters = "ığüşöç ";
             string englishCharacters = "igusoc-";
 
             for (int i = 0; i < turkishCharacters.Length; i++)

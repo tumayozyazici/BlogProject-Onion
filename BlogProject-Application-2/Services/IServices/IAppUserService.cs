@@ -13,8 +13,8 @@ namespace BlogProject_Application_2.Services.IServices
         Task<AppUserDTO> GetUserByIdAsync(string userId);
         Task<IEnumerable<AppUserDTO>> GetUsersAsync();
 
-        Task<int> CreateUserAsync(AppUserDTO user);
-        Task<int> UpdateUserAsync(AppUserDTO user);
+        int CreateUserAsync(AppUserDTO user);
+        int UpdateUserAsync(AppUserDTO user);
         Task<int> DeleteUserAsync(string userId);
     }
 }

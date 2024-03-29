@@ -1,4 +1,5 @@
 ﻿using BlogProject_Application_2.IRepositories;
+using BlogProject_Application_2.Services.IServices;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,6 +15,8 @@ namespace BlogProject_Application_2.Utilities.IUnitOfWork
         IArticleRepo ArticleRepo { get; }
         ICategoryRepo CategoryRepo { get; }
         ICommentRepo CommentRepo { get; }
+
+        
 
         Task<int> SaveAsync();
     }

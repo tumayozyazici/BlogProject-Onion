@@ -12,7 +12,7 @@ namespace BlogProject.Infrasturacture_3.Utilities.Logging
     {
         public void LogError(string message)
         {
-            throw new NotImplementedException();
+            //hata yazıyon buraya
         }
 
         public void LogInfo(string message)
