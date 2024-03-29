@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using BlogProject.Core.DomainModels.Models;
+using BlogProject_Application_2.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +13,13 @@ namespace BlogProject_Application_2.Mappers
     {
         public Mapping()
         {
-            
+            CreateMap<AppUser, AppUserDTO>().ForMember(dest=>dest.FullName,options=> options.MapFrom
+            (src=>src.FirstName + " " + src.LastName));
+
+
+            CreateMap<Article,ArticleDTO>().ReverseMap();
+            CreateMap<Category,CategoryDTO>().ReverseMap();
+            CreateMap<Comment, CommentDTO>().ReverseMap();
         }
     }
 }

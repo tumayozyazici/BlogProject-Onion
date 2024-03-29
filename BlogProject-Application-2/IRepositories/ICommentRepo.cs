@@ -10,5 +10,6 @@ namespace BlogProject_Application_2.IRepositories
 {
     public interface ICommentRepo : IBaseRepo<Comment>
     {
+        Task<IEnumerable<Comment>> GetAllByArticleIdAsync(string Id);
     }
 }
