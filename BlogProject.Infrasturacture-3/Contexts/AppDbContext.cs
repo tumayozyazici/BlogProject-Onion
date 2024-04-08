@@ -18,7 +18,7 @@ namespace BlogProject.Infrasturacture_3.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=GHOST2023\\SQLEXPRESS;Database=FATIHHOCA-OnionBlog;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=GHOST2023\\SQLEXPRESS;Database=OnionBlog;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder builder)
